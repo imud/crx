@@ -34,6 +34,9 @@
 				th:nth-child(2) {
 					width: 350px
 				}
+				th:nth-child(3) {
+					width: 100px
+				}
 
 				th,
 				td {
@@ -125,6 +128,7 @@
 								<tr>
 									<th>浏览器</th>
 									<th>扩展管理地址</th>
+									<th>优选方式</th>
 									<th>安装方式</th>
 								</tr>
 							</thead>
@@ -132,33 +136,39 @@
 								<tr>
 									<td>chrome浏览器</td>
 									<td><a href="chrome://extensions/">chrome://extensions/</a></td>
+									<td>方式1</td>
 									<td rowspan="6">
-										<div>首先解压下载的LiePlay扩展。然后在浏览器地址栏输入并访问对应扩展管理地址，如界面有“开发者模式”，请先勾选切换到该模式，再依次尝试以下安装方式：</div>
-										<div><strong>方式1：</strong>直接安装；将crx-lieplay/app.crx文件拖动至该界面进行安装。</div>
-										<div><strong>方式2：</strong>文件夹安装；点击界面上“加载已解压的扩展程序”按钮，选择crx-lieplay/app文件夹进行安装。</div>
-										<div><strong>方式3：</strong>打包安装；删除crx-lieplay/app.crx文件，点击浏览器管理界面“打包扩展程序”按钮，在“扩展程序根目录”后面点击“浏览”选择crx-lieplay/app文件夹，在私钥文件后面点击“浏览”选择crx-lieplay/app.pem文件，
+										<div>首先解压扩展到默认文件夹crx-lieplay。然后在浏览器地址栏输入并访问对应扩展管理地址，如界面有“开发者模式”，请先勾选切换到该模式，再依次尝试以下安装方式：</div>
+										<div><strong>方式1：</strong>直接安装 - 将crx-lieplay/app.crx文件拖动至浏览器扩展管理界面进行安装。</div>
+										<div><strong>方式2：</strong>文件夹安装 - 点击界面上“加载已解压的扩展程序”按钮，选择crx-lieplay/app文件夹进行安装。</div>
+										<div><strong>方式3：</strong>打包安装 - 删除crx-lieplay/app.crx文件，点击浏览器管理界面“打包扩展程序”按钮，在“扩展程序根目录”后面点击“浏览”选择crx-lieplay/app文件夹，在私钥文件后面点击“浏览”选择crx-lieplay/app.pem文件，
 											然后点击“打包扩展程序”，会重新生成crx-lieplay/app.crx文件，拖动该文件至浏览器扩展管理界面进行安装。</div>
 									</td>
 								</tr>
 								<tr>
 									<td>360极速浏览器</td>
 									<td><a href="chrome://myextensions/extensions/">chrome://myextensions/extensions/</a></td>
+									<td>方式2/3</td>
 								</tr>
 								<tr>
 									<td>360安全浏览器</td>
 									<td><a href="se://extensions/">se://extensions/</a></td>
+									<td>方式2/3</td>
 								</tr>
 								<tr>
 									<td>百度浏览器</td>
 									<td><a href="bdbrowser://settings">bdbrowser://settings</a></td>
+									<td>方式2/3</td>
 								</tr>
 								<tr>
 									<td>QQ浏览器</td>
 									<td><a href="qqbrowser://extensions/manage">qqbrowser://extensions/manage</a></td>
+									<td>方式1</td>
 								</tr>
 								<tr>
 									<td>猎豹浏览器</td>
 									<td><a href="liebao://extensions/">liebao://extensions/</a></td>
+									<td>方式2/3</td>
 								</tr>
 							</tbody>
 						</table>
