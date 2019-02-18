@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>LiePlay 视频解析扩展 </title>
+		<meta name="keywords" content="LiePlay,浏览器扩展,浏览器插件,chrome扩展,视频解析,免费视频,免费VIP视频" />
+		<meta name="description" content="LiePlay视频解析扩展安装和使用说明" />
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="page.css" />
+		<style>
+			table {
+				border-collapse: collapse;
+
+			}
+
+			th,
+			td {
+				padding: 2px 10px;
+				font-size: 1rem;
+				line-height: 1.5rem;
+
+			}
+
+			td div {
+				font-weight: 300;
+			}
+
+			@media (min-width: 1024px) {
+				th:nth-child(1) {
+					width: 150px
+				}
+
+				th:nth-child(2) {
+					width: 350px
+				}
+
+				th,
+				td {
+					padding: 2px 10px;
+					font-size: 1.125rem;
+					line-height: 1.875rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="chr-header">
+			<div class="chr-header__wrapper">
+				<div class="chr-header__lockup">
+					<div class="chr-header__logo">
+						<a href="liePlay.html" class="chr-header__logo-link">
+							<svg role="img" class="chr-header__logo-icon" viewBox="0 0 192 192">
+								<defs>
+									<path id="a" d="M8 20v140c0 6.6 5.4 12 12 12h152c6.6 0 12-5.4 12-12V20H8zm108 32H76c-4.42 0-8-3.58-8-8s3.58-8 8-8h40c4.42 0 8 3.58 8 8s-3.58 8-8 8z"></path>
+								</defs>
+								<clipPath id="b">
+									<use xlink:href="#a" overflow="visible"></use>
+								</clipPath>
+								<path clip-path="url(#b)" fill="#eee" d="M8 20h176v152H8z"></path>
+								<path fill="#fff" d="M116 36H76c-4.42 0-8 3.58-8 8s3.58 8 8 8h40c4.42 0 8-3.58 8-8s-3.58-8-8-8z" clip-path="url(#b)"></path>
+								<g clip-path="url(#b)">
+									<defs>
+										<circle id="c" cx="96" cy="160" r="76"></circle>
+									</defs>
+									<clipPath id="d">
+										<use xlink:href="#c" overflow="visible"></use>
+									</clipPath>
+									<path d="M32.07 84v93.27h34.01L96 125.45h76V84zm0 0v93.27h34.01L96 125.45h76V84z" clip-path="url(#d)" fill="#DB4437"></path>
+									<path d="M20 236h72.34l33.58-33.58v-25.14l-59.84-.01L20 98.24zm0 0h72.34l33.58-33.58v-25.14l-59.84-.01L20 98.24z"
+									 clip-path="url(#d)" fill="#0F9D58"></path>
+									<path d="M96 125.45l29.92 51.82L92.35 236H172V125.45zm0 0l29.92 51.82L92.35 236H172V125.45z" clip-path="url(#d)"
+									 fill="#FFCD40"></path>
+									<g clip-path="url(#d)">
+										<circle fill="#F1F1F1" cx="96" cy="160" r="34.55"></circle>
+										<circle fill="#4285F4" cx="96" cy="160" r="27.64"></circle>
+									</g>
+								</g>
+								<path clip-path="url(#b)" fill="#212121" fill-opacity=".05" d="M8 20h176v76H8z"></path>
+								<path fill="#212121" fill-opacity=".02" d="M8 95h176v1H8z"></path>
+								<path fill="#fff" fill-opacity=".05" d="M8 96h176v1H8z"></path>
+								<path fill="#212121" fill-opacity=".02" d="M116 52H76c-4.25 0-7.72-3.32-7.97-7.5-.02.17-.03.33-.03.5 0 4.42 3.58 8 8 8h40c4.42 0 8-3.58 8-8 0-.17-.01-.33-.03-.5-.25 4.18-3.72 7.5-7.97 7.5zM8 20v1h176v-1H8z"></path>
+								<path fill="#231F20" fill-opacity=".1" d="M76 36h40c4.25 0 7.72 3.32 7.97 7.5.01-.17.03-.33.03-.5 0-4.42-3.58-8-8-8H76c-4.42 0-8 3.58-8 8 0 .17.01.33.03.5.25-4.18 3.72-7.5 7.97-7.5zm96 135H20c-6.6 0-12-5.4-12-12v1c0 6.6 5.4 12 12 12h152c6.6 0 12-5.4 12-12v-1c0 6.6-5.4 12-12 12z"></path>
+								<radialGradient id="e" cx="7.502" cy="19.344" r="227.596" gradientUnits="userSpaceOnUse">
+									<stop offset="0" stop-color="#fff" stop-opacity=".1"></stop>
+									<stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+								</radialGradient>
+								<path fill="url(#e)" d="M8 20v140c0 6.6 5.4 12 12 12h152c6.6 0 12-5.4 12-12V20H8zm108 32H76c-4.42 0-8-3.58-8-8s3.58-8 8-8h40c4.42 0 8 3.58 8 8s-3.58 8-8 8z"></path>
+								<path fill="none" d="M0 0h192v192H0z"></path>
+							</svg>
+							<span class="chr-header__logo-title">Crx</span>
+						</a>
+					</div>
+				</div>
+				<div class="chr-header__nav">
+					<ul class="chr-header__nav-list">
+						<li class="chr-header__nav-li chr-header__nav-extensions">
+							<a href="liePlay.html" class="chr-header__nav-li-link">
+								LiePlay视频解析扩展
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="chr-main">
+			<div class="chr-privacy chr-wrapper">
+				<div class="chr-grid">
+					<div class="chr-privacy__container chr-grid__col chr-grid__col--12 mobile-padding">
+						<h1 class="google-chrome-privacy-notice">安装和使用说明</h1>
+						<h4>上次修改日期：2019 年 2 月 17 日</h4>
+						<p>LiePlay视频解析扩展是一个可安装于浏览器的视频解析扩展，该扩展借助开放的视频解析接口解析WEB页内视频，完全免费，且不含广告。扩展内使用之接口皆搜集自公共网络，扩展本身不提供任何解析或视频服务。该工具仅供娱乐。</p>
+						<h4>安装说明 </h4>
+						<table border="1">
+							<thead>
+								<tr>
+									<th>浏览器</th>
+									<th>扩展管理地址</th>
+									<th>安装方式</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>chrome浏览器</td>
+									<td><a href="chrome://extensions/">chrome://extensions/</a></td>
+									<td rowspan="6">
+										<div>首先解压下载的LiePlay扩展。然后在浏览器地址栏输入并访问对应扩展管理地址，如界面有“开发者模式”，请先勾选切换到该模式，再依次尝试以下安装方式：</div>
+										<div><strong>方式1：</strong>直接安装；将crx-lieplay/app.crx文件拖动至该界面进行安装。</div>
+										<div><strong>方式2：</strong>文件夹安装；点击界面上“加载已解压的扩展程序”按钮，选择crx-lieplay/app文件夹进行安装。</div>
+										<div><strong>方式3：</strong>打包安装；删除crx-lieplay/app.crx文件，点击浏览器管理界面“打包扩展程序”按钮，在“扩展程序根目录”后面点击“浏览”选择crx-lieplay/app文件夹，在私钥文件后面点击“浏览”选择crx-lieplay/app.pem文件，
+											然后点击“打包扩展程序”，会在所选目录同级目录生成crx文件，拖动该文件至刚才的界面。</div>
+									</td>
+								</tr>
+								<tr>
+									<td>360极速浏览器</td>
+									<td><a href="chrome://myextensions/extensions/">chrome://myextensions/extensions/</a></td>
+								</tr>
+								<tr>
+									<td>360安全浏览器</td>
+									<td><a href="se://extensions/">se://extensions/</a></td>
+								</tr>
+								<tr>
+									<td>百度浏览器</td>
+									<td><a href="bdbrowser://settings">bdbrowser://settings</a></td>
+								</tr>
+								<tr>
+									<td>QQ浏览器</td>
+									<td><a href="qqbrowser://extensions/manage">qqbrowser://extensions/manage</a></td>
+								</tr>
+								<tr>
+									<td>猎豹浏览器</td>
+									<td><a href="liebao://extensions/">liebao://extensions/</a></td>
+								</tr>
+							</tbody>
+						</table>
+						<h4>使用说明 </h4>
+						<ul>
+							<li>点击浏览器右上角的扩展图标，可对扩展进行设置。</li>
+							<li>扩展共有“勿扰”、“智能”、“普通”三种模式。任意模式下皆可通过鼠标右键菜单选择“LiePlay解析本页视频”解析当前页视频。区别在于，是否会在页面上显示一个可供点击的图标。智能模式下将会在浏览主流视频网站的视频播放页时自动显示图标，但不保证就一定会包括你所访问的视频网站。</li>
+							<li>正常情形下，扩展将自动加载自带的解析线路，并且会不定时更新这些线路，这些线路为不可删除。</li>
+							<li>自定义线路时请确保地址的格式正确，线路可在网上自行搜索。</li>
+							<li>可随时通过设置界面切换线路，或在播放页左边“切换线路”面板进行切换。</li>
+							<li>不保证解析视频内一定不含广告。如视频内含广告，切勿轻信。</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer class="chr-footer">
+
+			<div class="chr-footer__bottom">
+				<div class="chr-footer__logo">
+					有用链接
+				</div>
+				<nav class="chr-footer-glinks">
+					<ul class="chr-footer-glinks__list">
+						<li class="chr-footer-glinks__list-item">
+							<a href="https://www.google.cn/chrome/" class="chr-footer__link" target="_blank">
+								谷歌浏览器
+							</a>
+						</li>
+						<li class="chr-footer-glinks__list-item">
+							<a href="https://chrome.360.cn/ " class="chr-footer__link" target="_blank">
+								360极速浏览器
+							</a>
+						</li>
+						<li class="chr-footer-glinks__list-item">
+							<a href="https://browser.360.cn/" class="chr-footer__link" target="_blank">
+								360安全浏览器
+							</a>
+						</li>
+						<li class="chr-footer-glinks__list-item">
+							<a href="https://liulanqi.baidu.com/" class="chr-footer__link" target="_blank">
+								百度浏览器
+							</a>
+						</li>
+						<li class="chr-footer-glinks__list-item">
+							<a href="https://browser.qq.com/" class="chr-footer__link" target="_blank">
+								QQ浏览器
+							</a>
+						</li>
+						<li class="chr-footer-glinks__list-item">
+							<a href="https://www.liebao.cn/" class="chr-footer__link" target="_blank">
+								猎豹浏览器
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<ul class="chr-footer-help-language">
+					<li class="chr-footer-glinks__list-item">
+						<a href="about.html" class="chr-footer__link">
+							安装和使用说明
+						</a>
+					</li>
+					<li class="chr-footer-glinks__list-item">
+						<a href="about.html" class="chr-footer__link">
+							&copy; LiePlay
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>

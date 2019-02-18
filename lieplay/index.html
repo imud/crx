@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>LiePlay 视频解析扩展</title>
+		<meta name="keywords" content="LiePlay,浏览器扩展,浏览器插件,chrome扩展,视频解析,免费视频,免费VIP视频" />
+		<meta name="description" content="LiePlay视频解析扩展安装和使用说明" />
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="page.css" />
+	</head>
+	<body>
+		<div class="chr-header">
+			<div class="chr-header__wrapper">
+				<div class="chr-header__lockup">
+					<div class="chr-header__logo">
+						<a href="liePlay.html" class="chr-header__logo-link">
+							<svg role="img" class="chr-header__logo-icon" viewBox="0 0 192 192">
+								<defs>
+									<path id="a" d="M8 20v140c0 6.6 5.4 12 12 12h152c6.6 0 12-5.4 12-12V20H8zm108 32H76c-4.42 0-8-3.58-8-8s3.58-8 8-8h40c4.42 0 8 3.58 8 8s-3.58 8-8 8z"></path>
+								</defs>
+								<clipPath id="b">
+									<use xlink:href="#a" overflow="visible"></use>
+								</clipPath>
+								<path clip-path="url(#b)" fill="#eee" d="M8 20h176v152H8z"></path>
+								<path fill="#fff" d="M116 36H76c-4.42 0-8 3.58-8 8s3.58 8 8 8h40c4.42 0 8-3.58 8-8s-3.58-8-8-8z" clip-path="url(#b)"></path>
+								<g clip-path="url(#b)">
+									<defs>
+										<circle id="c" cx="96" cy="160" r="76"></circle>
+									</defs>
+									<clipPath id="d">
+										<use xlink:href="#c" overflow="visible"></use>
+									</clipPath>
+									<path d="M32.07 84v93.27h34.01L96 125.45h76V84zm0 0v93.27h34.01L96 125.45h76V84z" clip-path="url(#d)" fill="#DB4437"></path>
+									<path d="M20 236h72.34l33.58-33.58v-25.14l-59.84-.01L20 98.24zm0 0h72.34l33.58-33.58v-25.14l-59.84-.01L20 98.24z"
+									 clip-path="url(#d)" fill="#0F9D58"></path>
+									<path d="M96 125.45l29.92 51.82L92.35 236H172V125.45zm0 0l29.92 51.82L92.35 236H172V125.45z" clip-path="url(#d)"
+									 fill="#FFCD40"></path>
+									<g clip-path="url(#d)">
+										<circle fill="#F1F1F1" cx="96" cy="160" r="34.55"></circle>
+										<circle fill="#4285F4" cx="96" cy="160" r="27.64"></circle>
+									</g>
+								</g>
+								<path clip-path="url(#b)" fill="#212121" fill-opacity=".05" d="M8 20h176v76H8z"></path>
+								<path fill="#212121" fill-opacity=".02" d="M8 95h176v1H8z"></path>
+								<path fill="#fff" fill-opacity=".05" d="M8 96h176v1H8z"></path>
+								<path fill="#212121" fill-opacity=".02" d="M116 52H76c-4.25 0-7.72-3.32-7.97-7.5-.02.17-.03.33-.03.5 0 4.42 3.58 8 8 8h40c4.42 0 8-3.58 8-8 0-.17-.01-.33-.03-.5-.25 4.18-3.72 7.5-7.97 7.5zM8 20v1h176v-1H8z"></path>
+								<path fill="#231F20" fill-opacity=".1" d="M76 36h40c4.25 0 7.72 3.32 7.97 7.5.01-.17.03-.33.03-.5 0-4.42-3.58-8-8-8H76c-4.42 0-8 3.58-8 8 0 .17.01.33.03.5.25-4.18 3.72-7.5 7.97-7.5zm96 135H20c-6.6 0-12-5.4-12-12v1c0 6.6 5.4 12 12 12h152c6.6 0 12-5.4 12-12v-1c0 6.6-5.4 12-12 12z"></path>
+								<radialGradient id="e" cx="7.502" cy="19.344" r="227.596" gradientUnits="userSpaceOnUse">
+									<stop offset="0" stop-color="#fff" stop-opacity=".1"></stop>
+									<stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+								</radialGradient>
+								<path fill="url(#e)" d="M8 20v140c0 6.6 5.4 12 12 12h152c6.6 0 12-5.4 12-12V20H8zm108 32H76c-4.42 0-8-3.58-8-8s3.58-8 8-8h40c4.42 0 8 3.58 8 8s-3.58 8-8 8z"></path>
+								<path fill="none" d="M0 0h192v192H0z"></path>
+							</svg>
+							<span class="chr-header__logo-title">Crx</span>
+						</a>
+					</div>
+				</div>
+				<div class="chr-header__nav">
+					<ul class="chr-header__nav-list">
+						<li class="chr-header__nav-li chr-header__nav-extensions">
+							<a href="liePlay.html" class="chr-header__nav-li-link">
+								LiePlay视频解析扩展
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="chr-main">
+			<section>
+				<div class="chr-full-bleed-hero home">
+					<div class="chr-wrapper">
+						<div class="chr-full-bleed-hero__grid chr-grid">
+							<div class="chr-grid__col chr-grid__col--6 chr-grid__col--offset-3 chr-grid__col--align-middle">
+								<img class="chr-full-bleed-hero__image" src="icon.png" alt="">
+								<h1 class="chr-headline-1 chr-full-bleed-hero__title">
+									体验LiePlay浏览器视频解析扩展
+								</h1>
+								<p class="chr-subheadline chr-full-bleed-hero__sub">
+									完全免费的视频解析，纯净、简单、更易使用，<span style="color:#999;display:block;">支持谷歌/360极速/360安全/百度/QQ/猎豹等浏览器。</span>
+								</p>
+								<button type="button" class="chr-cta__button chr-cta__button--blue js-download chr-full-bleed-hero__button show" onclick="window.open('https://imud.github.io/crx/lieplay/crx-lieplay.zip')">
+									下载LiePlay
+								</button>
+
+							</div>
+						</div>
+						<a href="#feature-productivity" class="chr-anchor-arrow chr-full-bleed-hero__anchor">
+							下一页
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="js-sticky-trigger">
+				<div class="two-col-split" id="feature-productivity">
+					<div class="chr-wrapper">
+						<div class="chr-grid">
+							<div class="chr-grid__col chr-grid__col--5 chr-grid__col-l--4 chr-grid__col--align-middle chr-grid__col--offset-1">
+								<header class="two-col-split__header chr-benefits-icon benefits-icon-fast">
+									<svg role="img">
+										<use xlink:href="#benefits-icon-fast"><svg id="benefits-icon-fast" viewBox="0 0 72 72" width="100%" height="100%">
+												<g fill="none" transform="">
+													<circle cx="36" cy="36" fill="#f1f3f4" r="36"></circle>
+													<path d="m54 21-21.46 16.11c-2.0720202 1.4252202-3.0353697 3.991385-2.4131169 6.4280471.6222527 2.436662 2.698054 4.2267159 5.1997238 4.4839484 2.5016699.2572325 4.898307-1.0729459 6.0033931-3.3319955z"
+													 fill="#a8dab5"></path>
+													<path d="m36 15c-14.9116882 0-27 12.0883118-27 27h12c0-8.2842712 6.7157288-15 15-15 2.5822819.0158195 5.1157411.7051962 7.35 2l10.1-7.58c-4.8673061-4.1484477-11.0546686-6.4248298-17.45-6.42z"
+													 fill="#5ab974"></path>
+													<path d="m63.0000007 42c.0018026-7.826907-3.4041798-15.2667699-9.3300007-20.38l-5.95 11.12c2.1114977 2.6255641 3.2680635 5.8907468 3.28 9.26z"
+													 fill="#07732d"></path>
+												</g>
+											</svg></use>
+									</svg>
+									<h2 class="chr-headline-2">
+										化繁为简的畅快体验
+									</h2>
+								</header>
+								<div>
+									<p class="chr-copy">
+										下载安装包并按包内教程安装成功后，无需冗余配置，直接通过浏览器访问视频播放页，即可在页面左上角看到旋转的解析按钮，点击即能使用默认线路解析播放。
+									</p>
+								</div>
+								<div class="two-col-split__footer">
+
+								</div>
+							</div>
+							<div class="chr-grid__col chr-grid__col--5 chr-grid__col--6 two-col-split__image-wrapper  chr-grid__col-l--offset-1 ">
+								<img src="save_password_global_desktop.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="two-col-split">
+					<div class="chr-wrapper">
+						<div class="chr-grid">
+							<div class="chr-grid__col chr-grid__col--5 chr-grid__col-l--4 chr-grid__col--align-middle chr-grid__col--offset-1">
+								<header class="two-col-split__header chr-benefits-icon benefits-icon-search">
+									<svg role="img">
+										<use xlink:href="#benefits-icon-search">
+											<svg id="benefits-icon-search" viewBox="0 0 72 72" width="100%" height="100%">
+												<g fill="none" transform="">
+													<circle cx="36" cy="36" fill="#f1f3f4" r="36"></circle>
+													<circle cx="36" cy="36" fill="#4285f4" r="27"></circle>
+													<path d="m19.25 17h-1.18l-.42-.41c3.4163828-3.9807309 3.0751127-9.94998778-.7726938-13.5154156-3.8478065-3.56542783-9.82572749-3.45161613-13.53503271.25768909s-3.82311692 9.68722621-.25768909 13.53503271c3.56542782 3.8478065 9.5346847 4.1890766 13.5154156.7726938l.41.42v1.18l7.5 7.48 2.23-2.23zm-9 0c-3.72792206 0-6.75-3.0220779-6.75-6.75 0-3.72792206 3.02207794-6.75 6.75-6.75 3.7279221 0 6.75 3.02207794 6.75 6.75.0026593 1.7910252-.7076454 3.5094597-1.9740929 4.7759071-1.2664474 1.2664475-2.9848819 1.9767522-4.7759071 1.9740929z"
+													 fill="#aecbfa" transform="translate(22 22)"></path>
+													<path d="m38.59 39.65.41.41v1.19l7.5 7.48 2.23-2.23-7.48-7.5h-1.19l-.41-.41" fill="#d2e3fc"></path>
+												</g>
+											</svg>
+										</use>
+									</svg>
+									<h2 class="chr-headline-2">
+										多模式和便捷的线路配置
+									</h2>
+
+								</header>
+								<div>
+									<p class="chr-copy">
+										三种模式，随心选择。自动更新的优质线路，确保开箱即用。同时也满足自定义线路需求，自定义的线路可随意新增或删除。点击浏览器右上角扩展图标即可显示配置界面。
+									</p>
+								</div>
+								<div class="two-col-split__footer"></div>
+							</div>
+							<div class="chr-grid__col chr-grid__col--5 chr-grid__col--6 two-col-split__image-wrapper  two-col-split__image-left chr-grid__col--4 ">
+
+								<img src="translate_global_desktop.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="two-col-split">
+					<div class="chr-wrapper">
+						<div class="chr-grid">
+							<div class="chr-grid__col chr-grid__col--5 chr-grid__col-l--4 chr-grid__col--align-middle chr-grid__col--offset-1">
+								<header class="two-col-split__header chr-benefits-icon benefits-icon-shield">
+									<svg role="img">
+										<use xlink:href="#benefits-icon-shield">
+											<svg id="benefits-icon-shield" viewBox="0 0 72 72" width="100%" height="100%">
+												<g fill="none" fill-rule="evenodd" transform="">
+													<g fill-rule="nonzero">
+														<circle cx="36" cy="36" fill="#f1f3f4" r="36"></circle>
+														<path d="m15 36h21v-24l-21 9z" fill="#fbbc07"></path>
+														<path d="m57 36h-21v-24l21 9z" fill="#fde293"></path>
+														<path d="m51 48-15 12v-24h21z" fill="#fbbc07"></path>
+														<path d="m21 48 15 12v-24h-21z" fill="#f29902"></path>
+													</g>
+													<path d="m36 60s19.5-7.5 21-27v-12l-21-9-21 9v12c1.5 19.5 21 27 21 27z" stroke="#fbbc07" stroke-width="3"></path>
+												</g>
+											</svg>
+										</use>
+									</svg>
+									<h2 class="chr-headline-2">
+										无顾虑，使用安心
+									</h2>
+									<div>
+										<p class="chr-copy">
+											插件内无广告，干净、自然、无扰，更不会随意跳转其他链接或网站，使您免遭诱骗网站和危险网站的侵害。
+										</p>
+									</div>
+									<div class="two-col-split__footer">
+
+									</div>
+								</header>
+							</div>
+							<div class="chr-grid__col chr-grid__col--5 chr-grid__col--6 two-col-split__image-wrapper  chr-grid__col-l--offset-1 ">
+								<img src="chrome_global_desktop.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="two-col-split">
+					<div class="chr-wrapper">
+						<div class="chr-grid">
+							<div class="chr-grid__col chr-grid__col--5 chr-grid__col-l--4 chr-grid__col--align-middle chr-grid__col--offset-1">
+								<header class="two-col-split__header chr-benefits-icon benefits-icon-world">
+									<svg role="img">
+										<use xlink:href="#benefits-icon-world">
+											<svg id="benefits-icon-world" viewBox="0 0 72 72" width="100%" height="100%">
+												<g fill="none">
+													<circle cx="36" cy="36" fill="#f1f3f4" r="36"></circle>
+													<rect fill="#e94235" height="36" rx="3" width="48" x="12" y="18"></rect>
+													<path d="m30 57h12v3h-12z" fill="#f28b82"></path>
+													<path d="m15 0c-8.28427125 0-15 6.71572875-15 15 0 8.2842712 6.71572875 15 15 15 8.2842712 0 15-6.7157288 15-15 0-3.9782473-1.5803526-7.79355604-4.3933983-10.60660172-2.8130457-2.81304567-6.6283544-4.39339828-10.6066017-4.39339828zm10.4 9h-4.4c-.4694198-1.85782861-1.1645942-3.65117719-2.07-5.34 2.7214473.94778304 5.010938 2.84326843 6.45 5.34zm-10.4-5.94c1.2582487 1.8181661 2.2233259 3.8225572 2.86 5.94h-5.72c.6366741-2.1174428 1.6017513-4.1218339 2.86-5.94zm-11.61 14.94c-.52015873-1.9661794-.52015873-4.0338206 0-6h5.07c-.13069673.9948237-.20082595 1.9966697-.21 3 .00917405 1.0033303.07930327 2.0051763.21 3zm1.23 3h4.38c.46941978 1.8578286 1.1645942 3.6511772 2.07 5.34-2.72144725-.947783-5.01093804-2.8432684-6.45-5.34zm4.38-12h-4.38c1.44888811-2.50414408 3.75368341-4.40053959 6.49-5.34-.9192347 1.68693471-1.62786952 3.48035185-2.11 5.34zm6 17.94c-1.2582487-1.8181661-2.2233259-3.8225572-2.86-5.94h5.73c-.6397717 2.1180499-1.608239 4.1224736-2.87 5.94zm3.51-8.94h-7c-.1481689-.9933741-.2283553-1.995704-.24-3 .0110489-1.0043232.0912385-2.0066938.24-3h7c.1487615.9933062.2289511 1.9956768.24 3-.0116447 1.004296-.0918311 2.0066259-.24 3zm.38 8.34c.9192347-1.6869347 1.6278695-3.4803518 2.11-5.34h4.42c-1.4586952 2.5116011-3.7788167 4.4089133-6.53 5.34zm2.65-8.34c.1306967-.9948237.2008259-1.9966697.21-3-.0091741-1.0033303-.0793033-2.0051763-.21-3h5.07c.5201587 1.9661794.5201587 4.0338206 0 6z"
+													 fill="#f6aea9" transform="translate(21 21)"></path>
+													<rect fill="#c5221f" height="24" rx="3" width="12" x="45" y="36"></rect>
+												</g>
+											</svg>
+										</use>
+									</svg>
+									<h2 class="chr-headline-2">
+										多种浏览器支持
+									</h2>
+								</header>
+								<div>
+									<p class="chr-copy">
+										LiePlay扩展支持多种常用桌面浏览器，谷歌/360极速/360安全/百度/QQ/猎豹等。如安装或使用遇问题，可主动升级浏览器和本插件到最新版重试。也可查看底部使用说明和帮助。
+									</p>
+								</div>
+								<div class="two-col-split__footer">
+
+								</div>
+							</div>
+							<div class="chr-grid__col chr-grid__col--5 chr-grid__col--6 two-col-split__image-wrapper  two-col-split__image-left chr-grid__col--4 ">
+								<img src="connected_global_desktop.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="chr-download-now">
+					<div class="chr-wrapper">
+						<div class="chr-grid">
+							<div class="chr-grid__col chr-grid__col--8 chr-grid__col--offset-2 chr-grid__col--align-middle">
+								<h2 class="chr-headline-2 chr-download-now__title">立即体验 LiePlay</h2>
+								<button type="button" class="chr-cta__button chr-cta__button--reversed js-download show" onclick="window.open('https://imud.github.io/crx/lieplay/crx-lieplay.zip')">
+									下载 LiePlay
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="chr-footer">
+			<div class="chr-footer__bottom">
+				<div class="chr-footer__logo">
+					有用链接
+				</div>
+				<nav class="chr-footer-glinks">
+					<ul class="chr-footer-glinks__list">
+						<li class="chr-footer-glinks__list-item">
+							<a href="https://www.google.cn/chrome/" class="chr-footer__link" target="_blank">
+								谷歌浏览器
+							</a>
+						</li>
+						<li class="chr-footer-glinks__list-item">
+							<a href="https://chrome.360.cn/ " class="chr-footer__link" target="_blank">
+								360极速浏览器
+							</a>
+						</li>
+						<li class="chr-footer-glinks__list-item">
+							<a href="https://browser.360.cn/" class="chr-footer__link" target="_blank">
+								360安全浏览器
+							</a>
+						</li>
+						<li class="chr-footer-glinks__list-item">
+							<a href="https://liulanqi.baidu.com/" class="chr-footer__link" target="_blank">
+								百度浏览器
+							</a>
+						</li>
+						<li class="chr-footer-glinks__list-item">
+							<a href="https://browser.qq.com/" class="chr-footer__link" target="_blank">
+								QQ浏览器
+							</a>
+						</li>
+						<li class="chr-footer-glinks__list-item">
+							<a href="https://www.liebao.cn/" class="chr-footer__link" target="_blank">
+								猎豹浏览器
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<ul class="chr-footer-help-language">
+					<li class="chr-footer-glinks__list-item">
+						<a href="about.html" class="chr-footer__link">
+							安装和使用说明
+						</a>
+					</li>
+					<li class="chr-footer-glinks__list-item">
+						<a href="about.html" class="chr-footer__link">
+							&copy; LiePlay
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>
