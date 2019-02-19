@@ -1,10 +1,8 @@
-#### 浏览器视频解析扩展
+#### Chrome extension
+- 浏览器视频解析扩展https://imud.github.io/crx/lieplay/
+- 百度百家号标记过滤扩展https://imud.github.io/crx/baijiabuhao/ 
 
-https://imud.github.io/crx/lieplay/
-
-#### 百度百家号标记过滤扩展
-
-https://imud.github.io/crx/baijiabuhao/ 
+#### 安装方式
 
 |浏览器|扩展管理地址|安装方式|
 |-----|-----|-----|
