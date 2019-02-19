@@ -8,19 +8,28 @@
 		<meta name="description" content="LiePlay视频解析扩展安装和使用说明" />
 		<link rel="icon" type="image/x-icon" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="page.css" />
-		<script type="text/javascript">
-			var _hmt = _hmt || [];
-			(function() {
-				var hm = document.createElement("script");
-				hm.src = "https://hm.baidu.com/hm.js?dcaeeb92b46c3d7725388b7f9f1e2400";
-				var s = document.getElementsByTagName("script")[0];
-				s.parentNode.insertBefore(hm, s);
-			})();
-		</script>
 	</head>
 	<body>
 		<div class="chr-header">
 			<div class="chr-header__wrapper">
+				<div class="chr-header__hamburger">
+					<div class="chr-header__hamburger-wrapper" id="js-hamburger-button">
+						<button type="button" class="chr-header__hamburger-button" aria-controls="js-header__drawer" aria-expanded="false"
+						 aria-label="打开抽屉式导航栏">
+							<svg role="img" class="chr-header__hamburger-icon chr-header__hamburger-icon--standard" aria-labelledby="hamburger-title">
+								<title id="hamburger-title">菜单</title>
+								<use xlink:href="#hamburger">
+									<svg id="hamburger" viewBox="0 0 24 24" width="100%" height="100%">
+										<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+									</svg>
+								</use>
+							</svg>
+							<svg role="img" class="chr-header__hamburger-icon chr-header__hamburger-icon--reversed" aria-labelledby="hamburger-reversed-title">
+								<title id="hamburger-reversed-title">菜单</title>
+								<use xlink:href="#hamburger"></use>
+							</svg></button>
+					</div>
+				</div>
 				<div class="chr-header__lockup">
 					<div class="chr-header__logo">
 						<a href="index.html" class="chr-header__logo-link">
@@ -69,13 +78,80 @@
 				<div class="chr-header__nav">
 					<ul class="chr-header__nav-list">
 						<li class="chr-header__nav-li chr-header__nav-extensions">
-							<a href="index.html" class="chr-header__nav-li-link">
-								LiePlay视频解析扩展
+							<a style="color:#000" href="https://imud.github.io/crx/lieplay/index.html" class="chr-header__nav-li-link">
+								LiePlay视频解析
+							</a>
+						</li>
+						<li class="chr-header__nav-li chr-header__nav-extensions">
+							<a href="https://imud.github.io/crx/baijiabuhao/index.html" class="chr-header__nav-li-link">
+								BaiJiaBuHao百度百家号标记过滤
 							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
+			<div id="js-header__drawer" class="chr-header__drawer" aria-label="Navigation drawer">
+				<div class="chr-header__drawer-content">
+					<div class="chr-header__logo">
+						<a href="/intl/zh-CN_ALL/chrome/" class=" chr-header__logo-link" ga-on="click" ga-event-category="main_navigation"
+						 ga-event-action="clicked" ga-event-label="google-chrome" data-g-event="main_navigation" data-g-action="clicked"
+						 data-g-label="google-chrome">
+							<svg role="img" class="chr-header__logo-icon" viewBox="0 0 192 192">
+								<defs>
+									<path id="a" d="M8 20v140c0 6.6 5.4 12 12 12h152c6.6 0 12-5.4 12-12V20H8zm108 32H76c-4.42 0-8-3.58-8-8s3.58-8 8-8h40c4.42 0 8 3.58 8 8s-3.58 8-8 8z"></path>
+								</defs>
+								<clipPath id="b">
+									<use xlink:href="#a" overflow="visible"></use>
+								</clipPath>
+								<path clip-path="url(#b)" fill="#eee" d="M8 20h176v152H8z"></path>
+								<path fill="#fff" d="M116 36H76c-4.42 0-8 3.58-8 8s3.58 8 8 8h40c4.42 0 8-3.58 8-8s-3.58-8-8-8z" clip-path="url(#b)"></path>
+								<g clip-path="url(#b)">
+									<defs>
+										<circle id="c" cx="96" cy="160" r="76"></circle>
+									</defs>
+									<clipPath id="d">
+										<use xlink:href="#c" overflow="visible"></use>
+									</clipPath>
+									<path d="M32.07 84v93.27h34.01L96 125.45h76V84zm0 0v93.27h34.01L96 125.45h76V84z" clip-path="url(#d)" fill="#DB4437"></path>
+									<path d="M20 236h72.34l33.58-33.58v-25.14l-59.84-.01L20 98.24zm0 0h72.34l33.58-33.58v-25.14l-59.84-.01L20 98.24z"
+									 clip-path="url(#d)" fill="#0F9D58"></path>
+									<path d="M96 125.45l29.92 51.82L92.35 236H172V125.45zm0 0l29.92 51.82L92.35 236H172V125.45z" clip-path="url(#d)"
+									 fill="#FFCD40"></path>
+									<g clip-path="url(#d)">
+										<circle fill="#F1F1F1" cx="96" cy="160" r="34.55"></circle>
+										<circle fill="#4285F4" cx="96" cy="160" r="27.64"></circle>
+									</g>
+								</g>
+								<path clip-path="url(#b)" fill="#212121" fill-opacity=".05" d="M8 20h176v76H8z"></path>
+								<path fill="#212121" fill-opacity=".02" d="M8 95h176v1H8z"></path>
+								<path fill="#fff" fill-opacity=".05" d="M8 96h176v1H8z"></path>
+								<path fill="#212121" fill-opacity=".02" d="M116 52H76c-4.25 0-7.72-3.32-7.97-7.5-.02.17-.03.33-.03.5 0 4.42 3.58 8 8 8h40c4.42 0 8-3.58 8-8 0-.17-.01-.33-.03-.5-.25 4.18-3.72 7.5-7.97 7.5zM8 20v1h176v-1H8z"></path>
+								<path fill="#231F20" fill-opacity=".1" d="M76 36h40c4.25 0 7.72 3.32 7.97 7.5.01-.17.03-.33.03-.5 0-4.42-3.58-8-8-8H76c-4.42 0-8 3.58-8 8 0 .17.01.33.03.5.25-4.18 3.72-7.5 7.97-7.5zm96 135H20c-6.6 0-12-5.4-12-12v1c0 6.6 5.4 12 12 12h152c6.6 0 12-5.4 12-12v-1c0 6.6-5.4 12-12 12z"></path>
+								<radialGradient id="e" cx="7.502" cy="19.344" r="227.596" gradientUnits="userSpaceOnUse">
+									<stop offset="0" stop-color="#fff" stop-opacity=".1"></stop>
+									<stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+								</radialGradient>
+								<path fill="url(#e)" d="M8 20v140c0 6.6 5.4 12 12 12h152c6.6 0 12-5.4 12-12V20H8zm108 32H76c-4.42 0-8-3.58-8-8s3.58-8 8-8h40c4.42 0 8 3.58 8 8s-3.58 8-8 8z"></path>
+								<path fill="none" d="M0 0h192v192H0z"></path>
+							</svg> <span class="chr-header__logo-title">Crx</span></a>
+					</div>
+					<nav class="chr-header__drawer-nav">
+						<ul class="chr-header__drawer-nav-list">
+							<li class="chr-header__drawer-nav-li">
+								<a class="chr-header__drawer-nav-li-link" href="https://imud.github.io/crx/lieplay/index.html" class="chr-header__nav-li-link">
+									LiePlay视频解析
+								</a>
+							</li>
+							<li class="chr-header__drawer-nav-li">
+								<a class="chr-header__drawer-nav-li-link" href="https://imud.github.io/crx/baijiabuhao/index.html" class="chr-header__nav-li-link">
+									BaiJiaBuHao百度百家号标记过滤
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div id="js-drawer-backdrop" class="chr-header__drawer-backdrop"></div>
 		</div>
 		<div class="chr-main">
 			<section>
@@ -88,7 +164,7 @@
 									体验LiePlay浏览器视频解析扩展
 								</h1>
 								<p class="chr-subheadline chr-full-bleed-hero__sub">
-									完全免费的视频解析，纯净、简单、更易使用，<span style="color:#999;display:block;">支持谷歌/360极速/360安全/百度/QQ/猎豹等浏览器。</span>
+									完全免费，纯净、简单、更易使用，可解析主流视频网站(含VIP)视频，<span style="color:#999;display:block;">支持谷歌/360极速/360安全/百度/QQ/猎豹等浏览器。</span>
 								</p>
 								<button type="button" class="chr-cta__button chr-cta__button--blue js-download chr-full-bleed-hero__button show"
 								 onclick="window.open('https://imud.github.io/crx/lieplay/crx-lieplay.zip')">
@@ -313,17 +389,32 @@
 				</nav>
 				<ul class="chr-footer-help-language">
 					<li class="chr-footer-glinks__list-item">
-						<a href="about.html" class="chr-footer__link">
+						<a href="https://imud.github.io/crx/lieplay/about.html" class="chr-footer__link">
 							安装和使用说明
 						</a>
 					</li>
 					<li class="chr-footer-glinks__list-item">
-						<a href="about.html" class="chr-footer__link">
-							&copy; LiePlay
+						<a href="#" class="chr-footer__link" style="background: #e8eaed;">
+							&copy;w2c , <small>仅供娱乐</small>
 						</a>
 					</li>
 				</ul>
 			</div>
 		</footer>
+		<script type="text/javascript">
+			document.getElementById('js-hamburger-button').onclick = function() {
+				document.body.classList.add('is-showing-drawer', 'is-showing-backdrop')
+			}
+			document.getElementById('js-drawer-backdrop').onclick = function() {
+				document.body.classList.remove('is-showing-drawer', 'is-showing-backdrop')
+			}
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "https://hm.baidu.com/hm.js?dcaeeb92b46c3d7725388b7f9f1e2400";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
 	</body>
 </html>
