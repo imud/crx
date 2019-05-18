@@ -2,16 +2,9 @@
 	"version": "v1.0.0",
 	"date": "2019-02-13",
 	"apilist": [
-		"https://www.3aym.cn/?url=",
-                "https://api.bbbbbb.me/vip/?url=",
-		"http://api.51ckm.com/jx.php?url=",
-		"http://www.cmys.tv/?url=",
-		"http://v.d9y.net/vip/?url=",
 		"http://jx.du2.cc/?url=",
-		"http://at520.cn/jx/zxlpc.php?url=",
-		"http://api.hellosex.cc/jlexi.php?url=",
-		"http://www.1717yun.com/jx/ty.php?url=",
-		"https://api.bbbbbb.me/yunjx/?url=",
+		"http://api.51ckm.com/jx.php?url=",
+		"http://v.d9y.net/vip/?url=",
 		"http://beaacc.com/api.php?url="
 	],
 	"matches": [
